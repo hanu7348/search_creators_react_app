@@ -1,0 +1,65 @@
+.register-container {
+    border: 3px solid transparent;
+    border-radius: 15px;
+    padding: 40px;
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+    animation: borderAnimation 5s infinite;
+  }
+  
+  @keyframes borderAnimation {
+    0% {
+      border-color: transparent;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    25% {
+      border-color: #ff7f50;
+      box-shadow: 0 0 20px rgba(255, 127, 80, 0.6);
+    }
+    50% {
+      border-color: #32cd32;
+      box-shadow: 0 0 20px rgba(50, 205, 50, 0.6);
+    }
+    75% {
+      border-color: #1e90ff;
+      box-shadow: 0 0 20px rgba(30, 144, 255, 0.6);
+    }
+    100% {
+      border-color: transparent;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
+  /* Ensure the image covers the full container */
+  .object-fit-cover {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+/* Register Button Styling */
+.register-container .btn {
+    border-radius: 50px; /* Makes the button rounded */
+    background-color: #4CAF50; /* Primary color */
+    border: none; /* Removes default border */
+    color: white; /* Text color */
+    padding: 14px 40px; /* Adjust padding for larger size (top-bottom, left-right) */
+    font-size: 15px; /* Increase font size for better readability */
+    font-weight: bold; /* Makes the text bold */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    display: inline-block; /* Allows width and padding adjustments */
+    text-align: center; /* Center-align text */
+  }
+  
+  .register-container .btn:hover {
+    background-color: #45a049; /* Darker shade on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds shadow on hover */
+  }
+  
+  
